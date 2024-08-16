@@ -1,0 +1,9 @@
+<app-card>
+  <!-- This is how to add an event to your tags and
+   insid the qouts mark add the code -->
+  <button [class.active]="selected" (click)="onSelectUser()">
+    <img [src]="imagePath" [alt]=" user.name" />
+    <!-- This is how to access to the usercomponent public memmbers -->
+    <span>{{ user.name }}</span>
+  </button>
+</app-card>
